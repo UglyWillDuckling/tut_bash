@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# An example for pausing running processes and controlling them using background processing and **traps**
+
 # Function that will get executed when the user presses Ctrl+C
 function handler(){
     echo "Processing the Ctrl+C"

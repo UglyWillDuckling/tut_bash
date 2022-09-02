@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+f() (
+  g() {
+    echo G
+  }
+  g
+)
+
+# Ouputs `G`
+f
+# Command not found.
+# g
+

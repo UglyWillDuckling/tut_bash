@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# this is a shell script that acts like a filter,
+# but in only prints out one column.
+# the value of the column is the argument
+# to the script
+#
+# uncomment the next line to see how this works
+set -x
+set -v
+#
+# example:
+#       printcol 1
+#       printcol 3
+# the value of the argument is $1
+# Here comes the tricky part -
+awk '{print $'$1'}'
+# I told you!
